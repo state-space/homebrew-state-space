@@ -5,21 +5,21 @@
 class Cli < Formula
   desc "CLI application to interface with State Space"
   homepage "https://state.space"
-  version "0.0.23"
+  version "0.0.24"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/state-space/cli/releases/download/v0.0.23/state-space_darwin_x86_64"
-      sha256 "e61ab23a6f02dc8f3e3bf93f45d6ab0838f18f206b48a50a1e975e68679b4b7f"
+      url "https://github.com/state-space/cli/releases/download/v0.0.24/state-space_darwin_x86_64"
+      sha256 "22f04476695e492666ad3e94f78df98ac40232c4aed6b597da520928db5b7a0e"
 
       def install
         bin.install "state-space_darwin_x86_64" => "state-space"
       end
     end
     on_arm do
-      url "https://github.com/state-space/cli/releases/download/v0.0.23/state-space_darwin_arm64"
-      sha256 "fb5d3f2bd5b7439ad410bcd43a9970e0c260af57d6d4c4966696ae916ca8297c"
+      url "https://github.com/state-space/cli/releases/download/v0.0.24/state-space_darwin_arm64"
+      sha256 "a08aa3586440495913d60a29e2fb7929e06340815695f01e090d77dd4f3e5f64"
 
       def install
         bin.install "state-space_darwin_arm64" => "state-space"
@@ -30,8 +30,8 @@ class Cli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/state-space/cli/releases/download/v0.0.23/state-space_linux_x86_64"
-        sha256 "1b5e97e390fcc43af83023b7d240fcd429af954743291aacfcc8409e76c1e80b"
+        url "https://github.com/state-space/cli/releases/download/v0.0.24/state-space_linux_x86_64"
+        sha256 "437fda4cfe60fe7135117e4ba7efe46b39e4ef7c0e1ef0728834a80d1d8f669a"
 
         def install
           bin.install "state-space_linux_x86_64" => "state-space"
@@ -40,8 +40,8 @@ class Cli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/state-space/cli/releases/download/v0.0.23/state-space_linux_arm64"
-        sha256 "1c0c550e5e432ed3901a92665e8b82de5cd2fa7d9cbf120ab969dd9cb35d2e9c"
+        url "https://github.com/state-space/cli/releases/download/v0.0.24/state-space_linux_arm64"
+        sha256 "e8a23a1dddcfe0d7c3d4cef3a6df014b5b02788baf6c51d95d0c843d48caa31f"
 
         def install
           bin.install "state-space_linux_arm64" => "state-space"
